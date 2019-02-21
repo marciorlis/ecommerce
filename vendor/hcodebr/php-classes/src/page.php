@@ -24,7 +24,7 @@ class Page{
 		
 		Tpl::configure( $config );
 		// create the Tpl object
-		$this->tpl = new Tpl;
+		$this->tpl = new Tpl();
 
 		$this->setData($this->options["data"]);
 

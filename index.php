@@ -1,5 +1,6 @@
 <?php 
-
+echo $_SERVER['DOCUMENT_ROOT']."/views/";
+echo "////////////////////-----///////////////////////////";
 require_once("vendor/autoload.php");
 
 use \Slim\Slim;
@@ -13,7 +14,7 @@ $app->get('/', function() {
     // inicio do que esta dentro da rota
 	$page = new Page();
 
-	$page->setTpl("index.html");
+	$page->setTpl("index");
 	// fim do que esta dentro da rota
 });
 
